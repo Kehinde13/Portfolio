@@ -61,8 +61,8 @@ const data = [
         id: 8,
         name: "Online Store",
         img: Ecommerce,
-        code: "https://github.com/Kehinde13/Ecommerce",
-        demo: "https://kehinde13.github.io/Ecommerce/"
+        code: "https://github.com/Kehinde13/Ecommerce-Updated",
+        demo: "https://654ccc2e624211325c68141a--chipper-rolypoly-52125b.netlify.app/"
     }
    
  ]
