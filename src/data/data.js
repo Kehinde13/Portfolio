@@ -6,6 +6,7 @@ import roomTV from '../assets/roomTV.jpg';
 import dictionary from '../assets/dictionary.jpg';
 import Ecommerce from '../assets/Ecommerce.jpg';
 import form from '../assets/form.jpg';
+import github from '../assets/githubportfolio.png'
 
 const data = [
     {
@@ -63,6 +64,13 @@ const data = [
         img: Ecommerce,
         code: "https://github.com/Kehinde13/Ecommerce-Updated",
         demo: "https://654ccc2e624211325c68141a--chipper-rolypoly-52125b.netlify.app/"
+    },
+    {
+        id: 9,
+        name: "Github Portfolio",
+        img: github,
+        code: "https://github.com/Kehinde13/Frontend-Second-Semester-Examination-Project_Github-Portfolio",
+        demo: "https://kehindegithubportfolio.netlify.app/"
     }
    
  ]
