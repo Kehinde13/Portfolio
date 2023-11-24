@@ -1,7 +1,7 @@
 import countries from '../assets/countries.jpg';
 import Scissors from '../assets/Scissor.jpg';
 import AgeCalculator from '../assets/AgeCalculator.jpg';
-import myDoctorPadi from '../assets/myDoctorPadi.jpg';
+import SpaceTourism from '../assets/spacetourism.png'
 import roomTV from '../assets/roomTV.jpg';
 import dictionary from '../assets/dictionary.jpg';
 import Ecommerce from '../assets/Ecommerce.jpg';
@@ -11,21 +11,21 @@ import github from '../assets/githubportfolio.png'
 const data = [
     {
         id: 1,
+        name: "Space Tourism",
+        img: SpaceTourism,
+        code: "https://github.com/Kehinde13/space-tourism",
+        demo: "https://kehindespacetourism.netlify.app/"
+    },
+    {
+        id: 2,
         name: "Country",
         img: countries,
         code: "https://github.com/Kehinde13/countries",
         demo: "https://kehinde13.github.io/countries/"
     },
     {
-        id: 2,
-        name: "Age Calculator",
-        img: AgeCalculator,
-        code: "https://github.com/Kehinde13/ageCalculator",
-        demo: "https://kehinde13.github.io/ageCalculator/"
-    },
-    {
         id: 3,
-        name: "Scissor",
+        name: "Scissor URL shortener",
         img: Scissors,
         code: "https://github.com/Kehinde13/first-semester-assignment",
         demo: "https://friendly-malasada-04e886.netlify.app/"
@@ -53,10 +53,10 @@ const data = [
     },
     {
         id: 7,
-        name: "My Doctor Padi",
-        img: myDoctorPadi,
-        code: "https://github.com/Kehinde13/My-doctor-padi",
-        demo: "https://kehinde13.github.io/My-doctor-padi/"
+        name: "Age Calculator",
+        img: AgeCalculator,
+        code: "https://github.com/Kehinde13/ageCalculator",
+        demo: "https://kehinde13.github.io/ageCalculator/"
     },
     {
         id: 8,
