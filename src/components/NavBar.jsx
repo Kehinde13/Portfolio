@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { GitHub, Linkedin, Mail, Menu, Twitter, XSquare } from "react-feather";
 import logo from "../assets/LOGO.png";
 import { Link } from 'react-scroll';
@@ -17,27 +17,27 @@ function handleNav() {
       <div>
       <ul className='hidden md:flex'>
         <li>
-          <Link to='home' smooth={true} duration={500}>
+          <Link to='home' smooth={true} duration={500} className="bn5">
             Home
           </Link>
         </li>
         <li>
-          <Link to='about' smooth={true} duration={500}>
+          <Link to='about' smooth={true} duration={500} className="bn5">
             About
           </Link>
         </li>
         <li>
-          <Link to='skills' smooth={true} duration={500}>
+          <Link to='skills' smooth={true} duration={500} className="bn5">
             Skills
           </Link>
         </li>
         <li>
-          <Link to='projects' smooth={true} duration={500}>
+          <Link to='projects' smooth={true} duration={500} className="bn5">
             Projects
           </Link>
         </li>
         <li>
-          <Link to='contact' smooth={true} duration={500}>
+          <Link to='contact' smooth={true} duration={500} className="bn5">
             Contact
           </Link>
         </li>

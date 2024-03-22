@@ -2,7 +2,7 @@ import countries from '../assets/countries.jpg';
 import Scissors from '../assets/Scissor.jpg';
 import AgeCalculator from '../assets/AgeCalculator.jpg';
 import SpaceTourism from '../assets/spacetourism.png'
-import roomTV from '../assets/roomTV.jpg';
+import Chatter from '../assets/chatterProject.png';
 import dictionary from '../assets/dictionary.jpg';
 import Ecommerce from '../assets/Ecommerce.jpg';
 import form from '../assets/form.jpg';
@@ -25,10 +25,10 @@ const data = [
     },
     {
         id: 3,
-        name: "Scissor URL shortener",
-        img: Scissors,
-        code: "https://github.com/Kehinde13/first-semester-assignment",
-        demo: "https://friendly-malasada-04e886.netlify.app/"
+        name: "Chatter Blog",
+        img: Chatter,
+        code: "https://github.com/Kehinde13/Chatter",
+        demo: "https://chatterblog.netlify.app/"
     },
     {
         id: 4,
@@ -38,11 +38,11 @@ const data = [
         demo: "https://kehinde13.github.io/MultiStepForm/"
     },
     {
-        id: 5,
-        name: "Room TV",
-        img: roomTV,
-        code: "https://github.com/Kehinde13/RoomTv",
-        demo: "https://kehinde13.github.io/RoomTv/"
+        id: 3,
+        name: "Scissor URL shortener",
+        img: Scissors,
+        code: "https://github.com/Kehinde13/first-semester-assignment",
+        demo: "https://friendly-malasada-04e886.netlify.app/"
     },
     {
         id: 6,
