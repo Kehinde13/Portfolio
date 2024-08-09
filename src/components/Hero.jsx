@@ -14,7 +14,7 @@ function Hero() {
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
           I&apos;m a Frontend web developer specializing in HTML, CSS, Vanilla JS, reactJS
-          and VueJS. Currently, I&apos;m Focused on mastering TypeScript, 
+          and NextJS. Currently, I&apos;m Focused on mastering TypeScript, 
           I&apos;m also a graduate of AltSchool Africa, where i studied Frontend Engineering.
         </p>
         <div>

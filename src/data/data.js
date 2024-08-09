@@ -1,27 +1,27 @@
 import countries from '../assets/countries.jpg';
-import Scissors from '../assets/Scissor.jpg';
+import lendSqr from '../assets/lendSqr.jpg';
 import AgeCalculator from '../assets/AgeCalculator.jpg';
 import SpaceTourism from '../assets/spacetourism.png'
 import Chatter from '../assets/chatterProject.png';
 import dictionary from '../assets/dictionary.jpg';
 import Ecommerce from '../assets/Ecommerce.jpg';
-import form from '../assets/form.jpg';
-import github from '../assets/githubportfolio.png'
+import github from '../assets/githubportfolio.png';
+import healtcare from '../assets/healthcare.jpg'
 
 const data = [
     {
         id: 1,
-        name: "Space Tourism",
-        img: SpaceTourism,
-        code: "https://github.com/Kehinde13/space-tourism",
-        demo: "https://kehindespacetourism.netlify.app/"
+        name: "LendSqr dashboard",
+        img: lendSqr,
+        code: "https://github.com/Kehinde13/nextLendSqr",
+        demo: "https://lend-sqr-one.vercel.app/dashboard"
     },
     {
         id: 2,
-        name: "Country",
-        img: countries,
-        code: "https://github.com/Kehinde13/countries",
-        demo: "https://kehinde13.github.io/countries/"
+        name: "Healthcare dashboard",
+        img: healtcare,
+        code: "https://github.com/Kehinde13/healthcare_dashboard",
+        demo: "https://healthcare-dashboard-orcin.vercel.app/"
     },
     {
         id: 3,
@@ -32,17 +32,17 @@ const data = [
     },
     {
         id: 4,
-        name: "Form",
-        img: form,
-        code: "https://github.com/Kehinde13/MultiStepForm",
-        demo: "https://kehinde13.github.io/MultiStepForm/"
+        name: "Country",
+        img: countries,
+        code: "https://github.com/Kehinde13/countries",
+        demo: "https://kehinde13.github.io/countries/"
     },
     {
         id: 3,
-        name: "Scissor URL shortener",
-        img: Scissors,
-        code: "https://github.com/Kehinde13/first-semester-assignment",
-        demo: "https://friendly-malasada-04e886.netlify.app/"
+        name: "Space Tourism",
+        img: SpaceTourism,
+        code: "https://github.com/Kehinde13/space-tourism",
+        demo: "https://kehindespacetourism.netlify.app/"
     },
     {
         id: 6,

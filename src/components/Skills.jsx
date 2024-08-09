@@ -5,7 +5,7 @@ import ReactImg from '../assets/react.png';
 import FireBase from '../assets/firebase.png';
 import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
-import Vue from '../assets/VueJS.png'
+import Next from '../assets/nextjs.png'
 
 function Skills() {
   return (
@@ -45,8 +45,8 @@ function Skills() {
                     <p className='my-4'>Tailwind</p>
                 </div>
                 <div className='shadow shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src={Vue} alt="Vue icon" />
-                    <p className='my-4'>VueJS</p>
+                    <img className='w-20 mx-auto' src={Next} alt="Vue icon" />
+                    <p className='my-4'>NextJS</p>
                 </div>
             </div>
         </div>
