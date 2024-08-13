@@ -2,10 +2,10 @@ import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JavaScript from '../assets/javascript.png';
 import ReactImg from '../assets/react.png';
-import FireBase from '../assets/firebase.png';
+import typeScript from '../assets/file-type-typescript-official.svg';
 import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
-import Next from '../assets/nextjs.png'
+import Next from '../assets/nextjs.svg'
 
 function Skills() {
   return (
@@ -33,8 +33,8 @@ function Skills() {
                     <p className='my-4'>ReactJS</p>
                 </div>
                 <div className='shadow shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src={FireBase} alt="Firebase icon" />
-                    <p className='my-4'>Firebase</p>
+                    <img className='w-20 mx-auto' src={typeScript} alt="Firebase icon" />
+                    <p className='my-4'>TypeScript</p>
                 </div>
                 <div className='shadow shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-20 mx-auto' src={GitHub} alt="GitHub icon" />
