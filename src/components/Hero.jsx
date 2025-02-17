@@ -10,12 +10,12 @@ function Hero() {
           Kehinde Balogun
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          I&apos;m a Frontend Developer
+          I&apos;m a Software Developer
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I&apos;m a Frontend web developer specializing in HTML, CSS, Vanilla JS, reactJS
-          and NextJS. Currently, I&apos;m Focused on mastering TypeScript, 
-          I&apos;m also a graduate of AltSchool Africa, where i studied Frontend Engineering.
+        A passionate and skilled software developer specializing in JavaScript, TypeScript, and NodeJS, dedicated
+        to continuous learning and growth in the tech industry, always seeking new challenges and opportunities to
+        contribute positively to team projects and goals.
         </p>
         <div>
           <Link to="projects" smooth={true} duration={500}>

@@ -22,11 +22,6 @@ function handleNav() {
           </Link>
         </li>
         <li>
-          <Link to='about' smooth={true} duration={500} className="bn5">
-            About
-          </Link>
-        </li>
-        <li>
           <Link to='skills' smooth={true} duration={500} className="bn5">
             Skills
           </Link>
