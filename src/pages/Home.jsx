@@ -17,7 +17,7 @@ export default function Home() {
           Kehinde Balogun
         </h1>
         <p className="text-xl mt-2 text-gray-700 dark:text-gray-300">
-          Software Developer & Creative Technologist
+          Software Developer
         </p>
         <p className="mt-4 text-gray-600 dark:text-gray-400">
           Welcome to my portfolio. Use the links below to learn more about me.
