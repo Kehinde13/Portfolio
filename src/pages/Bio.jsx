@@ -5,7 +5,7 @@ export default function Bio() {
     <div className="min-h-screen bg-gradient-to-br from-sky-50 to-blue-100  dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200">
     <div className="absolute -top-16 -left-16 w-96 h-96 bg-blue-300 dark:bg-blue-800 rounded-full opacity-20 blur-3xl z-0"></div>
     <motion.section
-      className="max-w-3xl mx-auto pt-24 mb-12 text-center px-4"
+      className="max-w-3xl mx-auto pt-24 pb-12 text-center px-4"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
