@@ -44,10 +44,10 @@ export default function Bio() {
           make a difference in people’s lives.
         </span>
         <span className="block">
-          Among his achievements, Kehinde has successfully led frontend
-          development on a real-time dashboard for a fintech startup and
-          optimized a React-based product to cut page load times by over{" "}
-          <strong className="text-green-600 dark:text-green-400">40%</strong>.
+          Among his achievements, Kehinde volunteered with a New York-based Spectrum Charity 
+          Organization to build their website and create landing pages for their various events. 
+          His work notably helped boost attendance at their annual comedy show and increased 
+          ticket sales by <strong className="text-green-600 dark:text-green-400">20%</strong> by improving online visibility and streamlining the registration process.
           He’s also published technical tutorials aimed at helping junior
           developers break into the industry.
         </span>
