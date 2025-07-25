@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { GitHub, Linkedin, Mail, Menu, Twitter, XSquare } from "react-feather";
+import { GitHub, Linkedin, Mail, Menu, XSquare } from "react-feather";
 import logo from "../assets/LOGO.png";
 import { Link } from 'react-router-dom';
 import ThemeToggle from "./themeToggle";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMedium } from '@fortawesome/free-brands-svg-icons';
 
 function NavBar() {
   const [nav, setNav] = useState(false);
@@ -65,7 +67,7 @@ function NavBar() {
           </li>
           <li className="w-[150px] py-2 ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-600 text-white">
             <a href="http://twitter.com/kehny_" className="flex justify-between items-center px-4" target="_blank" rel="noreferrer">
-              Twitter <Twitter />
+              Medium {" "}<FontAwesomeIcon icon={faMedium} size="2x" />
             </a>
           </li>
         </ul>
@@ -76,7 +78,7 @@ function NavBar() {
         <a href="https://github.com/Kehinde13" target="_blank" rel="noopener noreferrer"><GitHub /></a>
         <a href="https://www.linkedin.com/in/kehinde-balogun-raheem" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
         <a href="mailto:balogunkehinde3@gmail.com" target="_blank" rel="noopener noreferrer"><Mail /></a>
-        <a href="https://twitter.com/kehny_" target="_blank" rel="noopener noreferrer"><Twitter /></a>
+        <a href="https://medium.com/@balogunkehinde3" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faMedium} size="lg" /></a>
       </div>
     </div>
   );
