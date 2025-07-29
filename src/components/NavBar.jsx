@@ -1,17 +1,23 @@
 import { useState } from "react";
 import { GitHub, Linkedin, Mail, Menu, XSquare } from "react-feather";
 import logo from "../assets/LOGO.png";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ThemeToggle from "./themeToggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
 
 function NavBar() {
   const [nav, setNav] = useState(false);
+  const location = useLocation();
 
   function handleNav() {
     setNav(!nav);
   }
+
+  const linkClass = (path) =>
+    `hover:text-blue-600 dark:hover:text-blue-400 ${
+      location.pathname === path ? 'text-blue-600 dark:text-blue-400 font-semibold' : ''
+    }`;
 
   return (
     <div className="z-30 fixed w-full h-20 flex justify-between items-center px-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300 shadow-md">
@@ -21,30 +27,30 @@ function NavBar() {
 
       {/* Desktop Links */}
       <ul className="hidden md:flex gap-4">
-        <li><Link to='/' className="dark:bn5 hover:text-blue-600 dark:hover:text-blue-400">Home</Link></li>
-        <li><Link to='/bio' className="dark:bn5 hover:text-blue-600 dark:hover:text-blue-400">Bio</Link></li>
-        <li><Link to='/portfolio' className="dark:bn5 hover:text-blue-600 dark:hover:text-blue-400">Portfolio</Link></li>
-        <li><Link to='/elevator-pitch' className="dark:bn5 hover:text-blue-600 dark:hover:text-blue-400">Elevator Pitch</Link></li>
-        <li><Link to='/blog' className="dark:bn5 hover:text-blue-600 dark:hover:text-blue-400">Blog</Link></li>
+        <li><Link to='/' className={linkClass('/')}>Home</Link></li>
+        <li><Link to='/bio' className={linkClass('/bio')}>Bio</Link></li>
+        <li><Link to='/portfolio' className={linkClass('/portfolio')}>Portfolio</Link></li>
+        <li><Link to='/elevator-pitch' className={linkClass('/elevator-pitch')}>Elevator Pitch</Link></li>
+        <li><Link to='/blog' className={linkClass('/blog')}>Blog</Link></li>
       </ul>
 
       {/* Theme Toggle Button */}
-      <div className="ml-36">
+      <div className="ml-44">
         <ThemeToggle />
       </div>
 
       {/* Mobile Toggle */}
-      <div onClick={handleNav} className="md:hidden z-10 ">
+      <div onClick={handleNav} className="md:hidden z-10">
         {nav ? <XSquare /> : <Menu />}
       </div>
 
       {/* Mobile Menu */}
       <ul className={nav ? "absolute top-0 z-10 left-0 w-full h-screen bg-white dark:bg-gray-900 flex flex-col justify-center items-center gap-10 text-2xl text-gray-800 dark:text-gray-300" : "hidden"}>
-        <li><Link to='/' onClick={handleNav}>Home</Link></li>
-        <li><Link to='/bio' onClick={handleNav}>Bio</Link></li>
-        <li><Link to='/portfolio' onClick={handleNav}>Portfolio</Link></li>
-        <li><Link to='/elevator-pitch' onClick={handleNav}>Elevator Pitch</Link></li>
-        <li><Link to='/blog' onClick={handleNav}>Blog</Link></li>
+        <li><Link to='/' onClick={handleNav} className={linkClass('/')}>Home</Link></li>
+        <li><Link to='/bio' onClick={handleNav} className={linkClass('/bio')}>Bio</Link></li>
+        <li><Link to='/portfolio' onClick={handleNav} className={linkClass('/portfolio')}>Portfolio</Link></li>
+        <li><Link to='/elevator-pitch' onClick={handleNav} className={linkClass('/elevator-pitch')}>Elevator Pitch</Link></li>
+        <li><Link to='/blog' onClick={handleNav} className={linkClass('/blog')}>Blog</Link></li>
       </ul>
 
       {/* Desktop Side Socials */}
@@ -67,7 +73,7 @@ function NavBar() {
           </li>
           <li className="w-[150px] py-2 ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-600 text-white">
             <a href="http://twitter.com/kehny_" className="flex justify-between items-center px-4" target="_blank" rel="noreferrer">
-              Medium {" "}<FontAwesomeIcon icon={faMedium} size="2x" />
+              Medium <FontAwesomeIcon icon={faMedium} size="2x" />
             </a>
           </li>
         </ul>

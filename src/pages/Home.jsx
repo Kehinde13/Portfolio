@@ -20,7 +20,7 @@ export default function Home() {
           Software Developer
         </p>
         <p className="mt-4 text-gray-600 dark:text-gray-400">
-          Welcome to my portfolio. Use the links below to learn more about me.
+          Welcome to my website. Use the links below to learn more about me.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-4 justify-center">
@@ -34,7 +34,7 @@ export default function Home() {
             href="/portfolio"
             className="inline-block bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded transition"
           >
-            View Portfolio
+            View Projects
           </a>
           <a
             href="/elevator"

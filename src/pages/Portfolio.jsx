@@ -84,6 +84,24 @@ export default function Portfolio() {
             </div>
           </li>
 
+           {/* LendSqr Dashboard */}
+          <li className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transition hover:shadow-lg">
+            <h3 className="text-2xl font-semibold text-blue-700 dark:text-blue-300">LendSqr Dashboard</h3>
+            <p className="text-gray-600 dark:text-gray-400 mt-2">
+              A comprehensive dashboard for managing loans, users, and transactions.
+            </p>
+            <div className="flex flex-wrap gap-2 text-sm mt-3">
+              <span className="bg-blue-100 dark:bg-blue-900 px-2 py-1 rounded">React</span>
+              <span className="bg-blue-100 dark:bg-blue-900 px-2 py-1 rounded">Jest (for testing)</span>
+              <span className="bg-blue-100 dark:bg-blue-900 px-2 py-1 rounded">Prisma</span>
+            </div>
+            <div className="mt-3 space-x-3">
+              <a href="https://lend-sqr-one.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400">Live Demo</a>
+              <a href="https://github.com/Kehinde13/nextLendSqr" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400">GitHub</a>
+            </div>
+            
+          </li>
+
         </ul>
       </motion.section>
     </div>
