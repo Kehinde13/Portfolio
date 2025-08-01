@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profilePic from '/me.jpg'; 
 
 export default function Home() {
   return (
@@ -8,12 +9,22 @@ export default function Home() {
 
       {/* Content */}
       <motion.section
-        className="z-10 text-center max-w-xl"
+        className="z-10 text-center max-w-xl pt-24 pb-12"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
+       
+        <motion.img
+          src={profilePic}
+          alt="Kehinde Balogun"
+          className="w-40 h-40 mx-auto mb-6 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        />
+
+        <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 dark:text-white">
           Kehinde Balogun
         </h1>
         <p className="text-xl mt-2 text-gray-700 dark:text-gray-300">
@@ -23,7 +34,7 @@ export default function Home() {
           Welcome to my website. Use the links below to learn more about me.
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-4 justify-center">
+        <div className="mt-6 mb-4 flex flex-wrap gap-4 justify-center">
           <a
             href="/bio"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition"

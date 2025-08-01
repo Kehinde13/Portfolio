@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { GitHub, Linkedin, Mail, Menu, XSquare } from "react-feather";
-import logo from "../assets/LOGO.png";
+import logo from "/LOGO.png";
 import { Link, useLocation } from 'react-router-dom';
 import ThemeToggle from "./themeToggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

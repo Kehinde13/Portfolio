@@ -18,15 +18,15 @@ export default function ElevatorPitch() {
         </h2>
 
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-          Hi, I&apos;m Kehinde Balogun — a frontend developer passionate about building user-focused digital products.
+          Hi, I&apos;m Kehinde Balogun, a frontend developer passionate about building user-focused digital products.
           I work with React, TypeScript, and modern web tools to deliver clean, fast, and accessible UIs.
           I&apos;m looking to grow with teams that value creativity, communication, and impact.
         </p>
 
         <video
           controls
-          className="w-full max-w-xl mx-auto rounded-lg shadow border border-gray-300 dark:border-gray-600"
-          src="/elevator-pitch.mp4"
+          className="h-64 mx-auto rounded-lg shadow border border-gray-300 dark:border-gray-600"
+          src="/Elevator-pitch.mp4"
         >
           Your browser does not support the video tag.
         </video>
