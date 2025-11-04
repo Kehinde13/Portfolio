@@ -4,7 +4,7 @@ import profilePic from '/me.jpg';
 export default function Home() {
   return (
     <main className="min-h-screen z-0 flex flex-col items-center justify-center px-4 bg-gradient-to-br from-sky-50 to-blue-100 dark:from-gray-900 dark:to-gray-800 dark:text-gray-200 text-gray-800 relative">
-      {/* Optional Background Shape */}
+      
       <div className="absolute -top-16 -left-16 w-96 h-96 bg-blue-300 dark:bg-blue-800 rounded-full opacity-20 blur-3xl z-0"></div>
 
       {/* Content */}
