@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { title } from "framer-motion/client";
 
 export default function Blog() {
   return (
