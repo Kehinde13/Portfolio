@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { title } from "framer-motion/client";
 
 export default function Blog() {
   return (
@@ -15,6 +16,27 @@ export default function Blog() {
 
         <ul className="space-y-6">
           {[
+            {
+              title: "Mastering Advanced Routing Techniques in Next.js",
+              url: "https://medium.com/javascript-in-plain-english/mastering-advanced-routing-techniques-in-next-js-2062233c0a35",
+              description: "In this tutorial, we’ll explore how to go beyond simple page navigation, diving into dynamic routes, nested routing, API routes, route protection, and performance optimization.",
+              date: "Oct 26, 2025",
+              readTime: "10 mins read"
+            },
+            {
+              title: "Hands-On Guide to Setting Up and Querying Databases with Python and SQL",
+              url: "https://medium.com/@balogunkehinde3/hands-on-guide-to-setting-up-and-querying-databases-with-python-and-sql-46ec91bc5b72",
+              description: "A developer’s Guide to Setting Up a SQL Database and Connecting It to Python",
+              date: "Oct 20, 2025",
+              readTime: "8 min read"
+            },
+            {
+              title: "Handling State in React: From useState to Redux Toolkit",
+              url: "https://medium.com/@balogunkehinde3/handling-state-in-react-from-usestate-to-redux-toolkit-68771ed2e175",
+              description: "State management is the heartbeat of every React application. Whether you’re tracking user input, toggling modals, or syncing data across multiple components, mastering state management is key to building interactive, scalable apps.",
+              date: "Oct 6, 2025",
+              readTime: "8 mins read"
+            },
             {
               title: "Getting Started with Node.js: Build Your First Fullstack App",
               url: "https://medium.com/@balogunkehinde3/getting-started-with-node-js-build-your-first-fullstack-app-9f6610b3dc7c",
@@ -39,14 +61,6 @@ export default function Blog() {
                 "Secure your app using Firebase's authentication system in React. Learn to handle sign-up, sign-in, and auth state with ease.",
               date: "Apr 30, 2024",
               readTime: "11 min read",
-            },
-            {
-              title: "API Fetch of GitHub Repositories with ReactJS",
-              url: "https://medium.com/@balogunkehinde3/api-fetch-of-github-repositories-with-reactjs-2eb9a21e80bd",
-              description:
-                "Explore GitHub’s API and learn how to fetch and display user repositories using React and best practices for async data handling.",
-              date: "Jan 3, 2024",
-              readTime: "8 min read",
             },
           ].map((post, index) => (
             <motion.li

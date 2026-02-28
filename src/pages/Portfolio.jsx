@@ -42,6 +42,7 @@ export default function Portfolio() {
               </div>
 
               <div className="mt-3 space-x-3">
+                { project.live &&
                 <a
                   href={project.live}
                   target="_blank"
@@ -50,6 +51,7 @@ export default function Portfolio() {
                 >
                   Live Demo
                 </a>
+                }
                 <a
                   href={project.github}
                   target="_blank"

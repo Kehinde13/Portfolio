@@ -8,6 +8,20 @@ export const projects = [
     github: "https://github.com/balogunkehinde13/alx-project-nexus",
   },
   {
+    title: "Padisquare Multi-Vendor Mini Sites",
+    description:
+      "A simplified multi-tenant storefront system built with Next.js App Router.Each vendor gets their own mini site with products, search, sorting, and pagination.",
+    tech: ["Next.js", "React", "React Context", "TypeScript", "TailwindCSS"],
+    live: "padi-square-eta.vercel.app/",
+    github: "https://github.com/balogunkehinde13/padiSquare",
+  },
+  {
+    title: "Product Upload Mobile App (React Native)",
+    description: "A simple React Native (Expo) mobile application that allows users to upload up to five products, each with a name, price, and photo. The app focuses on clean user experience, predictable behavior, and a scalable state architecture suitable for real-world mobile products",
+    tech: ["Raect Native", "Expo", "React Context", "React Native Async Storage", "expo Image Picker"],
+    github: "https://github.com/Kehinde13/product-upload-app"
+  },
+  {
     title: "Cryptocurrency Tracker",
     description:
       "Built with CoinGecko API and charting libraries to visualize real-time crypto prices.",
