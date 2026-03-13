@@ -22,3 +22,21 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+.env
+.env.local
+.env.production
+node_modules/
+dist/
+
+# Claude Code personal settings
+.claude/settings.local.json
+
+# Playwright
+playwright-report/
+test-results/
+.playwright/
+
+# MCP server cache
+.mcp/
