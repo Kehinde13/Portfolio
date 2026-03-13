@@ -25,7 +25,7 @@ export default function ElevatorPitch() {
 
         <video
           controls
-          className="h-64 mx-auto rounded-lg shadow border border-gray-300 dark:border-gray-600"
+          className="w-full max-w-xl mx-auto rounded-xl shadow-lg border border-gray-300 dark:border-gray-600"
           src="/Elevator-pitch.mp4"
         >
           Your browser does not support the video tag.

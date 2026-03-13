@@ -15,27 +15,31 @@ function NavBar() {
   }
 
   const linkClass = (path) =>
-    `hover:text-blue-600 dark:hover:text-blue-400 ${
-      location.pathname === path ? 'text-blue-600 dark:text-blue-400 font-semibold' : ''
+    `transition-colors duration-150 hover:text-blue-600 dark:hover:text-blue-400 ${
+      location.pathname === path
+        ? 'text-blue-600 dark:text-blue-400 font-semibold border-b-2 border-blue-600 dark:border-blue-400 pb-0.5'
+        : 'text-gray-700 dark:text-gray-300'
     }`;
 
   return (
-    <div className="z-30 fixed w-full h-20 flex justify-between items-center px-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300 shadow-md">
+    <div className="z-30 fixed w-full h-20 flex items-center px-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300 shadow-md">
+      {/* Logo */}
       <div className="flex items-center gap-4">
         <img src={logo} alt="logo" style={{ width: "50px" }} />
       </div>
 
-      {/* Desktop Links */}
-      <ul className="hidden md:flex gap-4">
+      {/* Desktop Links — centered absolutely */}
+      <ul className="hidden md:flex gap-6 absolute left-1/2 -translate-x-1/2 whitespace-nowrap">
         <li><Link to='/' className={linkClass('/')}>Home</Link></li>
         <li><Link to='/bio' className={linkClass('/bio')}>Bio</Link></li>
         <li><Link to='/portfolio' className={linkClass('/portfolio')}>Portfolio</Link></li>
         <li><Link to='/elevator-pitch' className={linkClass('/elevator-pitch')}>Elevator Pitch</Link></li>
         <li><Link to='/blog' className={linkClass('/blog')}>Blog</Link></li>
+        <li><Link to='/contact' className={linkClass('/contact')}>Contact</Link></li>
       </ul>
 
       {/* Theme Toggle Button */}
-      <div className="ml-44">
+      <div className="ml-auto">
         <ThemeToggle />
       </div>
 
@@ -51,6 +55,7 @@ function NavBar() {
         <li><Link to='/portfolio' onClick={handleNav} className={linkClass('/portfolio')}>Portfolio</Link></li>
         <li><Link to='/elevator-pitch' onClick={handleNav} className={linkClass('/elevator-pitch')}>Elevator Pitch</Link></li>
         <li><Link to='/blog' onClick={handleNav} className={linkClass('/blog')}>Blog</Link></li>
+        <li><Link to='/contact' onClick={handleNav} className={linkClass('/contact')}>Contact</Link></li>
       </ul>
 
       {/* Desktop Side Socials */}
@@ -72,7 +77,7 @@ function NavBar() {
             </a>
           </li>
           <li className="w-[150px] py-2 ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-600 text-white">
-            <a href="http://twitter.com/kehny_" className="flex justify-between items-center px-4" target="_blank" rel="noreferrer">
+            <a href="https://medium.com/@balogunkehinde3" className="flex justify-between items-center px-4" target="_blank" rel="noreferrer">
               Medium <FontAwesomeIcon icon={faMedium} size="2x" />
             </a>
           </li>

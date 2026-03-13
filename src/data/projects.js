@@ -18,7 +18,7 @@ export const projects = [
   {
     title: "Product Upload Mobile App (React Native)",
     description: "A simple React Native (Expo) mobile application that allows users to upload up to five products, each with a name, price, and photo. The app focuses on clean user experience, predictable behavior, and a scalable state architecture suitable for real-world mobile products",
-    tech: ["Raect Native", "Expo", "React Context", "React Native Async Storage", "expo Image Picker"],
+    tech: ["React Native", "Expo", "React Context", "React Native Async Storage", "expo Image Picker"],
     github: "https://github.com/Kehinde13/product-upload-app"
   },
   {
