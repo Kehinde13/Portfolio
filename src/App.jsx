@@ -5,6 +5,7 @@ import Bio from './pages/Bio';
 import Portfolio from './pages/Portfolio';
 import ElevatorPitch from './pages/ElevatorPitch';
 import Blog from './pages/Blog';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/elevator-pitch" element={<ElevatorPitch />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
     </>

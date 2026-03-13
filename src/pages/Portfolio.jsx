@@ -16,47 +16,47 @@ export default function Portfolio() {
           My Projects
         </h2>
 
-        <ul className="space-y-6">
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <li
               key={project.title}
-              className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transition hover:shadow-lg"
+              className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transition hover:shadow-lg flex flex-col"
             >
-              <h3 className="text-2xl font-semibold text-blue-700 dark:text-blue-300">
+              <h3 className="text-xl font-semibold text-blue-700 dark:text-blue-300 mb-2">
                 {project.title}
               </h3>
 
-              <p className="text-gray-600 dark:text-gray-400 mt-2">
+              <p className="text-gray-600 dark:text-gray-400 text-sm flex-1">
                 {project.description}
               </p>
 
-              <div className="flex flex-wrap gap-2 text-sm mt-3">
+              <div className="flex flex-wrap gap-2 text-xs mt-4">
                 {project.tech.map((item) => (
                   <span
                     key={item}
-                    className="bg-blue-100 dark:bg-blue-900 px-2 py-1 rounded"
+                    className="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-1 rounded-full font-medium"
                   >
                     {item}
                   </span>
                 ))}
               </div>
 
-              <div className="mt-3 space-x-3">
-                { project.live &&
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400"
-                >
-                  Live Demo
-                </a>
-                }
+              <div className="mt-4 flex gap-3">
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-1.5 rounded-lg font-medium transition-colors"
+                  >
+                    Live Demo
+                  </a>
+                )}
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400"
+                  className="inline-block border border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm px-4 py-1.5 rounded-lg font-medium transition-colors"
                 >
                   GitHub
                 </a>
