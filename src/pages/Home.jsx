@@ -1,3 +1,4 @@
+// Home page — landing section of the portfolio
 import { motion } from 'framer-motion';
 import profilePic from '/me.jpg';
 
@@ -33,7 +34,7 @@ export default function Home() {
         <p className="text-xl mt-2 font-medium text-blue-600 dark:text-blue-400">
           Software Developer
         </p>
-        <p className="mt-3 text-base text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase text-sm">
+        <p className="mt-3 text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase text-sm">
           React · Node.js · Full-Stack Web Apps
         </p>
         <p className="mt-5 text-gray-600 dark:text-gray-400 leading-relaxed max-w-md mx-auto">
