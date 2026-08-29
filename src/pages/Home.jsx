@@ -4,7 +4,7 @@ import profilePic from '/me.jpg';
 
 export default function Home() {
   return (
-    <main className="min-h-screen z-0 flex flex-col items-center justify-center px-4 bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 dark:text-gray-200 text-gray-800 relative overflow-hidden">
+    <div className="min-h-screen z-0 flex flex-col items-center justify-center px-4 bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 dark:text-gray-200 text-gray-800 relative overflow-hidden">
 
       {/* Background blobs for depth */}
       <div className="absolute -top-16 -left-16 w-96 h-96 bg-blue-300 dark:bg-blue-800 rounded-full opacity-20 blur-3xl z-0"></div>
@@ -35,10 +35,10 @@ export default function Home() {
           Software Developer
         </p>
         <p className="mt-3 text-gray-500 dark:text-gray-400 font-medium tracking-wide uppercase text-sm">
-          React · Node.js · Full-Stack Web Apps
+          NEXT.JS · TYPESCRIPT · NODE.JS · POSTGRESQL
         </p>
         <p className="mt-5 text-gray-600 dark:text-gray-400 leading-relaxed max-w-md mx-auto">
-          I build clean, scalable web applications with a focus on great user experience. Explore my work, read my thoughts, or get in touch.
+          I build reliable, user-focused web applications from interface to deployment. My work includes real-time systems, authentication, API integrations, automated testing, and production-ready full-stack applications.
         </p>
 
         <div className="mt-8 mb-4 flex flex-wrap gap-3 justify-center">
@@ -55,12 +55,6 @@ export default function Home() {
             About Me
           </a>
           <a
-            href="/elevator-pitch"
-            className="inline-block bg-white dark:bg-gray-800 hover:bg-blue-50 dark:hover:bg-gray-700 text-blue-600 dark:text-blue-400 border border-blue-300 dark:border-blue-700 px-6 py-2.5 rounded-lg font-semibold shadow-sm hover:shadow-md transition-all duration-200"
-          >
-            Elevator Pitch
-          </a>
-          <a
             href="/blog"
             className="inline-block bg-white dark:bg-gray-800 hover:bg-blue-50 dark:hover:bg-gray-700 text-blue-600 dark:text-blue-400 border border-blue-300 dark:border-blue-700 px-6 py-2.5 rounded-lg font-semibold shadow-sm hover:shadow-md transition-all duration-200"
           >
@@ -68,6 +62,6 @@ export default function Home() {
           </a>
         </div>
       </motion.section>
-    </main>
+    </div>
   );
 }

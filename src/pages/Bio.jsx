@@ -1,20 +1,14 @@
-/* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import { CheckCircle } from "react-feather";
 
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.15 } },
-};
-
+const container = { hidden: {}, show: { transition: { staggerChildren: 0.15 } } };
 const item = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 const stack = [
-  "Next.js", "React", "TypeScript", "Redux Toolkit",
-  "Node.js", "Express", "Django", "DRF",
+  "Next.js", "React", "TypeScript", "Node.js", "Express.js", "PostgreSQL",
+  "Prisma ORM", "Redux Toolkit", "Vitest", "Playwright", "Git and GitHub",
 ];
 
 export default function Bio() {
@@ -29,85 +23,27 @@ export default function Bio() {
         initial="hidden"
         animate="show"
       >
-        <motion.h1 variants={item} className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-          About Me
-        </motion.h1>
-        <motion.p variants={item} className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">
+        <motion.h1 variants={item} className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-6">
           Building Production-Ready Systems, Not Just Screens.
-        </motion.p>
+        </motion.h1>
 
-        {/* Intro */}
-        <motion.p variants={item} className="mb-4">
-          I'm{" "}
-          <strong className="text-blue-600 dark:text-blue-400">Kehinde Balogun</strong>
-          , a{" "}
-          <span className="text-blue-600 font-semibold dark:text-blue-400">
-            frontend-first software developer
-          </span>{" "}
-          with strong backend experience. Over the past few months, I've focused on building{" "}
-          <span className="text-blue-600 font-semibold dark:text-blue-400">
-            scalable, API-driven applications
-          </span>{" "}
-          that balance performance, maintainability, and real user needs.
-        </motion.p>
+        <motion.div variants={item} className="space-y-4 text-left leading-relaxed">
+          <p>I’m Kehinde Balogun, a software developer with more than three years of experience building web and mobile applications. I work primarily with React, Next.js, TypeScript, Node.js, and PostgreSQL, and I’m comfortable taking features from interface development through API integration, testing, and deployment.</p>
+          <p>My recent work includes real-time polling systems, shipment-tracking platforms, multi-tenant storefronts, mobile applications, and large-scale website content migrations. Through these projects, I have worked with authentication, database design, third-party APIs, webhooks, automated testing, state management, responsive interfaces, and production deployment.</p>
+          <p>I currently work with StarMark on a Florida Atlantic University website migration project, where I have migrated more than 500 webpages using Omni CMS. My responsibilities include organizing content according to the new site architecture, transferring core content and images, applying reusable website components, performing quality checks, and publishing pages to a testing environment for review.</p>
+          <p>I also participate in developer communities and hands-on learning programs. My experience includes Global Hack Week: Agents, Hacktoberfest, open-source contribution, technical writing, and volunteer software development with STEM for Others.</p>
+        </motion.div>
 
-        {/* Stack */}
-        <motion.p variants={item} className="mb-3">
-          My core stack:
-        </motion.p>
-        <motion.div variants={item} className="flex flex-wrap justify-center gap-2 mb-6">
+        <motion.h2 variants={item} className="text-2xl font-bold text-blue-600 dark:text-blue-400 mt-8 mb-3">
+          Core Stack
+        </motion.h2>
+        <motion.div variants={item} className="flex flex-wrap justify-center gap-2">
           {stack.map((tech) => (
-            <span
-              key={tech}
-              className="px-3 py-1 text-sm rounded-full bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 font-medium"
-            >
+            <span key={tech} className="px-3 py-1 text-sm rounded-full bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 font-medium">
               {tech}
             </span>
           ))}
         </motion.div>
-
-        {/* Recent focus */}
-        <motion.p variants={item} className="mb-6">
-          Recently, I've worked on dashboards, polling platforms, and content-driven systems where
-          the frontend depends heavily on{" "}
-          <span className="text-blue-600 font-semibold dark:text-blue-400">
-            clean API contracts, global state management, authentication flows, and performance
-            optimization
-          </span>
-          . I'm comfortable moving between UI, API integration, and backend logic to ship features
-          end to end.
-        </motion.p>
-
-        {/* Commitments */}
-        <motion.h2 variants={item} className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">
-          My Commitments
-        </motion.h2>
-        <motion.ul variants={item} className="space-y-4 text-left">
-          <li className="flex gap-3">
-            <CheckCircle size={20} className="mt-0.5 shrink-0 text-green-500" aria-hidden="true" />
-            <span>
-              <span className="font-semibold">Open Source & Education:</span> I contribute to{" "}
-              <strong className="text-purple-600 dark:text-purple-400">STEMplore</strong>
-              , collaborating on frontend features and API-powered workflows while sharing practical
-              knowledge with junior developers.
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <CheckCircle size={20} className="mt-0.5 shrink-0 text-green-500" aria-hidden="true" />
-            <span>
-              <span className="font-semibold">Impact & Results:</span> I focus on outcomes. My work
-              on event and community platforms led to a{" "}
-              <strong className="text-green-600 dark:text-green-400">20% increase in ticket sales</strong>{" "}
-              by improving UX and backend-driven flows.
-            </span>
-          </li>
-        </motion.ul>
-
-        {/* Close */}
-        <motion.p variants={item} className="mt-6">
-          I'm currently growing as a frontend engineer who understands backend systems—writing clean
-          UI code, integrating real APIs, and contributing to products built to scale.
-        </motion.p>
 
         <motion.a
           variants={item}

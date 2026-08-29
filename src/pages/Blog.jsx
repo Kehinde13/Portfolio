@@ -71,7 +71,7 @@ export default function Blog() {
               <a
                 href={post.url}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="block bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-shadow rounded-xl p-6 border border-gray-200 dark:border-gray-700"
               >
                 <h3 className="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-2">

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-4 bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 dark:text-gray-200 text-gray-800 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 dark:text-gray-200 text-gray-800 relative overflow-hidden">
 
       <div className="absolute -top-16 -left-16 w-96 h-96 bg-blue-300 dark:bg-blue-800 rounded-full opacity-20 blur-3xl z-0"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-indigo-300 dark:bg-indigo-900 rounded-full opacity-20 blur-3xl z-0"></div>
@@ -77,6 +77,6 @@ export default function Contact() {
           </button>
         </form>
       </motion.section>
-    </main>
+    </div>
   );
 }

@@ -1,9 +1,8 @@
-import { Routes, Route } from 'react-router-dom';
+import { Navigate, Routes, Route } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import Home from './pages/Home';
 import Bio from './pages/Bio';
 import Portfolio from './pages/Portfolio';
-import ElevatorPitch from './pages/ElevatorPitch';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 
@@ -16,7 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/elevator-pitch" element={<ElevatorPitch />} />
+          <Route path="/elevator-pitch" element={<Navigate to="/bio" replace />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

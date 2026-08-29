@@ -52,14 +52,16 @@ export default function Portfolio() {
                     Live Demo
                   </a>
                 )}
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block border border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm px-4 py-1.5 rounded-lg font-medium transition-colors"
-                >
-                  GitHub
-                </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block border border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm px-4 py-1.5 rounded-lg font-medium transition-colors"
+                  >
+                    GitHub
+                  </a>
+                )}
               </div>
             </li>
           ))}
